@@ -37,7 +37,7 @@ GEM5_CONFIG=<__GEM5_CONFIG__>
 
 ################################################################################
 
-sudo chown $USER /dev/kvm
+# sudo chown $USER /dev/kvm
 
 # Define the results directory and the function for your run.
 FN=${1:-fibonacci-go}
@@ -48,7 +48,7 @@ OUTDIR=$RESULTS_DIR/${FN}/
 ## Create output directory
 mkdir -p $OUTDIR
 
-sudo $GEM5 \
+$GEM5 \
     --outdir=$OUTDIR \
         $GEM5_CONFIG \
             --kernel $KERNEL \

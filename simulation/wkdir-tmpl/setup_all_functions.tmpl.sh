@@ -35,7 +35,7 @@ GEM5_CONFIG=<__GEM5_CONFIG__>
 
 
 ################################################################################
-sudo chown $USER /dev/kvm
+# sudo chown $USER /dev/kvm
 
 
 ## Parse the functions.list file
@@ -54,7 +54,7 @@ do
     ## Create output directory
     mkdir -p $OUTDIR
 
-    sudo $GEM5 \
+    $GEM5 \
         --outdir=$OUTDIR \
             $GEM5_CONFIG \
                 --kernel $KERNEL \
